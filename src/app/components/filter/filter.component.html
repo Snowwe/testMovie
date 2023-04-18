@@ -1,0 +1,20 @@
+<form [formGroup]="searchForm">
+  <div class="input-group mb-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter title"
+      formControlName="title"
+    />
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Enter year"
+      formControlName="year"
+    />
+
+    <button type="button" class="btn btn-dark" (click)="search()">
+      Search
+    </button>
+  </div>
+</form>
